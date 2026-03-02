@@ -86,31 +86,31 @@ MATCH_CONFIG_CATALOG = {
         "blocking_factors": ["WHOLESALER_NUMBER", "RETAILER_CHANNEL"],
         "scaler_type": MinMaxScaler,
     },
-    "minmax_CYTrendShare_blocking": {
-        "name": "minmax_CYTrendShare_blocking",
+    "minmax_CYTrendContribution_blocking": {
+        "name": "minmax_CYTrendContribution_blocking",
         "outlier_cols": ["CY_pre_period_VOL", "LY_pre_period_VOL", "YOY_pre_period_TREND"],
-        "cols_to_standardize": ["CY_pre_period_VOL", "CY_SHARE", "YOY_pre_period_TREND"],
+        "cols_to_standardize": ["CY_pre_period_VOL", "CY_CONTRIBUTION", "YOY_pre_period_TREND"],
         "blocking_factors": ["WHOLESALER_NUMBER", "RETAILER_CHANNEL"],
         "scaler_type": MinMaxScaler,
     },
-    "minmax_CYShare_blocking": {
-        "name": "minmax_CYShare_blocking",
+    "minmax_CYContribution_blocking": {
+        "name": "minmax_CYContribution_blocking",
         "outlier_cols": ["CY_pre_period_VOL", "LY_pre_period_VOL", "YOY_pre_period_TREND"],
-        "cols_to_standardize": ["CY_pre_period_VOL", "CY_SHARE"],
+        "cols_to_standardize": ["CY_pre_period_VOL", "CY_CONTRIBUTION"],
         "blocking_factors": ["WHOLESALER_NUMBER", "RETAILER_CHANNEL"],
         "scaler_type": MinMaxScaler,
     },
-    "standard_CYTrendShare_blocking": {
-        "name": "standard_CYTrendShare_blocking",
+    "standard_CYTrendContribution_blocking": {
+        "name": "standard_CYTrendContribution_blocking",
         "outlier_cols": ["CY_pre_period_VOL", "LY_pre_period_VOL", "YOY_pre_period_TREND"],
-        "cols_to_standardize": ["CY_pre_period_VOL", "YOY_pre_period_TREND", "CY_SHARE"],
+        "cols_to_standardize": ["CY_pre_period_VOL", "YOY_pre_period_TREND", "CY_CONTRIBUTION"],
         "blocking_factors": ["WHOLESALER_NUMBER", "RETAILER_CHANNEL"],
         "scaler_type": StandardScaler,
     },
-    "robust_CYTrendShare_blocking": {
-        "name": "robust_CYTrendShare_blocking",
+    "robust_CYTrendContribution_blocking": {
+        "name": "robust_CYTrendContribution_blocking",
         "outlier_cols": ["CY_pre_period_VOL", "LY_pre_period_VOL", "YOY_pre_period_TREND"],
-        "cols_to_standardize": ["CY_pre_period_VOL", "YOY_pre_period_TREND", "CY_SHARE"],
+        "cols_to_standardize": ["CY_pre_period_VOL", "YOY_pre_period_TREND", "CY_CONTRIBUTION"],
         "blocking_factors": ["WHOLESALER_NUMBER", "RETAILER_CHANNEL"],
         "scaler_type": RobustScaler,
     },
